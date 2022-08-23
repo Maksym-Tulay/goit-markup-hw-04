@@ -209,9 +209,9 @@ a {
   /* outline: 2px dashed red; */
 }
 
-.index-hero::after {
-  /* background-color: var(--hero-image-overlay-color); */
-}
+/* .index-hero::after {
+  background-color: var(--hero-image-overlay-color);
+} */
 
 .index-hero-title {
   width: 696px;
@@ -286,6 +286,21 @@ a {
 
 .index-aside-item:last-child {
   margin-right: 0;
+}
+
+.index-aside-item::before{
+  display: block;
+  content: "";
+  height: 120px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--grey-background-color);
+  /* outline: 1px solid black; */
+}
+
+.index-aside-item:nth-child(1)::before{
+  background-image: url(../images/antenna\ 1.png);
 }
 
 .item-header {
