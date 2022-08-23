@@ -9,6 +9,8 @@
   --address-text-color: rgba(255, 255, 255, 60%);
   --header-border-color: rgba(236, 236, 236, 100%);
   --portfolio-item-border-color: rgba(238, 238, 238, 100%);
+  --hero-image-overlay-color: rgba(47, 48, 58, 40%);
+  --hero-image-background-color: rgba(196, 196, 196, 100%);
 }
 html {
   box-sizing: border-box;
@@ -23,7 +25,7 @@ html {
 body {
   background-color: var(--body-background-color);
   color: var(--body-text-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -86,7 +88,7 @@ a {
   padding-bottom: 25px;
   margin-right: 94px;
 
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -97,7 +99,7 @@ a {
 }
 
 .logo-span {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -185,13 +187,30 @@ a {
 /* hero-section */
 
 .index-hero {
-  background-color: var(--footer-background-color);
   margin-bottom: 0;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  max-width: 1600px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--hero-image-overlay-color);
+  background-image: linear-gradient(
+      to right,
+      var(--hero-image-overlay-color),
+      var(--hero-image-overlay-color)
+    ),
+    url(../images/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 
   /* outline: 2px dashed red; */
+}
+
+.index-hero::after {
+  /* background-color: var(--hero-image-overlay-color); */
 }
 
 .index-hero-title {
@@ -521,7 +540,7 @@ a {
   margin-top: 0;
   margin-bottom: 20px;
 
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -532,7 +551,7 @@ a {
 }
 
 .logo-span {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
