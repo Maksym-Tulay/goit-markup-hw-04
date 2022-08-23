@@ -155,12 +155,13 @@ a {
 }
 
 .contact-item {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   /* justify-content: space-between; */
 }
 
 .contact-item::before {
+  display: block;
   content: "";
   background-repeat: no-repeat;
   background-color: var(--body-background-color);
@@ -305,7 +306,6 @@ a {
 .index-aside-list {
   list-style: none;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
