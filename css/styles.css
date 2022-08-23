@@ -155,19 +155,41 @@ a {
 
   /* outline: 2px solid blue; */
 }
-.contact-nav a {
-  display: block;
+
+.contact-item {
+  display: inline-flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+}
 
+.contact-nav a {
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: rgba(117, 117, 117, 100%);
   letter-spacing: 0.02em;
+  color: var(--list-text-color);
 }
 
-.contact-nav-item {
+/* .contact-item {
+  display: inline-flex;
+  align-items: center;
+
+} */
+
+/* .contact-item::before {
+  display: block;
+  content: "";
+  height: 12px;
+  
+  background-repeat: no-repeat;
+  background-color: var(--body-background-color);
+} */
+
+.icon-envelope {
+  background-image: url(../images/envelope.svg);
+  background-repeat: no-repeat;
 }
 
 /* hover and focus */
@@ -288,7 +310,7 @@ a {
   margin-right: 0;
 }
 
-.index-aside-item::before{
+.index-aside-item::before {
   display: block;
   content: "";
   height: 120px;
@@ -296,11 +318,24 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--grey-background-color);
+  margin-bottom: 30px;
   /* outline: 1px solid black; */
 }
 
-.index-aside-item:nth-child(1)::before{
-  background-image: url(../images/antenna\ 1.png);
+.icon-antenna::before {
+  background-image: url(../images/antenna\ 1.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock\ 1.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram\ 1.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut\ 1.svg);
 }
 
 .item-header {
