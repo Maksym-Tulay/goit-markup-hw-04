@@ -332,19 +332,19 @@ a {
 }
 
 .icon-antenna::before {
-  background-image: url(../images/antenna\ 1.svg);
+  background-image: url(../images/antenna.svg);
 }
 
 .icon-clock::before {
-  background-image: url(../images/clock\ 1.svg);
+  background-image: url(../images/clock.svg);
 }
 
 .icon-diagram::before {
-  background-image: url(../images/diagram\ 1.svg);
+  background-image: url(../images/diagram.svg);
 }
 
 .icon-astronaut::before {
-  background-image: url(../images/astronaut\ 1.svg);
+  background-image: url(../images/astronaut.svg);
 }
 
 .item-header {
@@ -464,7 +464,80 @@ a {
   letter-spacing: 0.03em;
 }
 
+.item-container.sm-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* line-height: 1; */
+  padding: 28px 44px 12px 44px;
+}
+
+.smlist-link {
+  display: block;
+}
+
+.smlist-link:hover {
+  background-color: var(--blue-color);
+}
+
+.smlist-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.smlist-icon:hover {
+  /* height: 44px;
+  width: 44px; */
+  fill: var(--body-background-color);
+  background-color: var(--blue-color);
+}
+
+/* .item-container-logo:focus {
+
+  background-color: var(--blue-color);
+  background-size: 44px;
+  background-position: center;
+  border-radius: 50%;
+} */
+
 /* портфоліо main section*/
+
+.index-clientlist-section {
+  background-color: var(--body-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.index-clientlist-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.clientlist {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.clientlist-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid;
+  border-color: var(--portfolio-item-border-color);
+}
+
+.clientlist-logo {
+  /* width: 170px;
+  height: 92px;
+  border: 1px solid;
+  border-color: var(--portfolio-item-border-color); */
+}
 
 .main {
 }
