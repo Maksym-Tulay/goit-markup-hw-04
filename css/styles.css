@@ -109,6 +109,7 @@ a {
   letter-spacing: 0.03em;
 }
 
+.logo-header:hover,
 .logo-header:focus {
   color: var(--blue-color);
 }
@@ -156,38 +157,17 @@ a {
   /* outline: 2px solid blue; */
 }
 
-.contact-item {
+.contact-link {
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
 }
 
-.contact-item::before {
-  display: block;
-  content: "";
-  background-repeat: no-repeat;
-  background-color: var(--body-background-color);
-  background-size: contain;
-}
-
-.icon-envelope::before {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  align-self: center;
-  background-image: url(../images/envelope.svg);
-}
-
-.icon-smartphone::before {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  align-self: center;
-  background-image: url(../images/smartphone.svg);
-}
-
-.contact-nav a {
-  /* display: block; */
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -198,21 +178,19 @@ a {
   color: var(--list-text-color);
 }
 
-/* .contact-item {
-  display: inline-flex;
-  align-items: center;
-
-} */
+.contact-icon {
+  fill: currentColor;
+}
 
 /* hover and focus */
 
-.main-nav a:hover,
-.contact-nav .item a:hover {
+.main-nav .item:hover,
+.contact-nav .contact-link:hover {
   color: var(--blue-color);
 }
 
-.main-nav .item a:focus,
-.contact-nav .item a:focus {
+.main-nav .item:focus,
+.contact-nav .contact-link:focus {
   color: var(--blue-color);
 }
 
@@ -236,9 +214,10 @@ a {
       var(--hero-image-overlay-color)
     ),
     url(../images/hero-image.jpg);
+
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 
   /* outline: 2px dashed red; */
 }
@@ -426,10 +405,8 @@ a {
   width: 270px;
   margin-right: 30px;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-  0px 1px 1px rgba(0, 0, 0, 0.14), 
-  0px 2px 1px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
   /* outline: 2px solid orchid; */
 }
@@ -476,9 +453,6 @@ a {
   display: flex;
   justify-content: center;
   row-gap: 10px;
-
-  /* line-height: 1; */
-  /* padding: 28px 44px 12px 44px; */
 }
 
 .smlist-link {
@@ -507,22 +481,7 @@ a {
   fill: var(--body-background-color);
 }
 
-/* .smlist-icon:hover {
-  height: 44px;
-  width: 44px;
-  fill: var(--body-background-color);
-  background-color: var(--blue-color);
-} */
-
-/* .item-container-logo:focus {
-
-  background-color: var(--blue-color);
-  background-size: 44px;
-  background-position: center;
-  border-radius: 50%;
-} */
-
-/* портфоліо main section*/
+/* Clientlist section */
 
 .index-clientlist-section {
   background-color: var(--body-background-color);
@@ -536,28 +495,36 @@ a {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .clientlist {
-  list-style: none;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+
+  column-gap: 30px;
 }
 
-.clientlist-item {
+/* .clientlist-link {
+  display: flex;
+  align-items:center;
+  justify-content: center;
   width: 170px;
   height: 92px;
+
   border: 1px solid;
-  border-color: var(--portfolio-item-border-color);
+  border-color: var(--socialmedia-icon-color);
+  border-radius: 4px;
+  
+} */
+
+.clientlist-icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--socialmedia-icon-color);
 }
 
-.clientlist-logo {
-  /* width: 170px;
-  height: 92px;
-  border: 1px solid;
-  border-color: var(--portfolio-item-border-color); */
-}
+/* портфоліо main section*/
 
 .main {
 }
@@ -599,7 +566,6 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   padding: 6px 22px;
-  
 }
 
 .gallery-nav button:focus {
@@ -608,8 +574,9 @@ a {
 .gallery-nav button:hover {
   background-color: var(--blue-color);
   color: var(--body-background-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /* gallery */
