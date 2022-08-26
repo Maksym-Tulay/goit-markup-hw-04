@@ -144,7 +144,7 @@ a {
   letter-spacing: 0.02em;
 }
 
-.main-nav .current a {
+.main-nav .current-item {
   color: var(--blue-color);
 }
 
@@ -185,10 +185,7 @@ a {
 /* hover and focus */
 
 .main-nav .item:hover,
-.contact-nav .contact-link:hover {
-  color: var(--blue-color);
-}
-
+.contact-nav .contact-link:hover,
 .main-nav .item:focus,
 .contact-nav .contact-link:focus {
   color: var(--blue-color);
@@ -241,7 +238,6 @@ a {
   width: 216px;
   height: 50px;
   background-color: var(--blue-color);
-  background: var(--blue-color);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -255,7 +251,7 @@ a {
 }
 
 .index-hero-button:focus {
-  color: var(--blue-color);
+  background-color: var(--blue-color);
 }
 
 /* specialities section */
@@ -305,6 +301,7 @@ a {
   background-position: 50% 50%;
   background-color: var(--grey-background-color);
   margin-bottom: 30px;
+  border-radius: 4px;
   /* outline: 1px solid black; */
 }
 
@@ -350,11 +347,8 @@ a {
   /* outline: 2px dashed tomato; */
 }
 
+.index-work-section a:hover,
 .index-work-section a:focus {
-  color: var(--blue-color);
-}
-
-.index-work-section a:hover {
   color: var(--blue-color);
 }
 
@@ -480,10 +474,11 @@ a {
 /* Clientlist section */
 
 .index-clientlist-section {
-  background-color: var(--body-background-color);
+  text-align: center;
   padding-top: 94px;
   padding-bottom: 94px;
-  text-align: center;
+
+  background-color: var(--body-background-color);
 }
 
 .index-clientlist-title {
@@ -574,9 +569,7 @@ a {
   padding: 6px 22px;
 }
 
-.gallery-nav button:focus {
-  color: var(--blue-color);
-}
+.gallery-nav button:focus,
 .gallery-nav button:hover {
   background-color: var(--blue-color);
   color: var(--body-background-color);
@@ -611,25 +604,25 @@ a {
 }
 
 .gallery-item-box {
+  display: block;
 }
 
+.gallery-item-box:hover,
 .gallery-item-box:focus {
-  color: var(--blue-color);
-}
-
-.gallery-item-box:hover {
-  color: var(--blue-color);
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .descr-container {
   margin-top: 0px;
   padding: 20px 24px;
 
+  background-color: var(--body-background-color);
+
   border: 1px solid;
   border-top: 0px;
   border-color: var(--portfolio-item-border-color);
-
-  background-color: var(--body-background-color);
 }
 
 .gallery-item-header {
@@ -652,32 +645,30 @@ a {
 /* footer*/
 
 .footer {
-  /* display: flex;
-  align-items: center;
-  justify-content: baseline; */
-  background-color: var(--footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: var(--footer-background-color);
 
   /* outline: 2px dashed peru; */
 }
 
 .container.footer-container {
+  display: flex;
+  align-items: baseline;
+
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  display: flex;
-  align-items: baseline;
 }
 
 .address-container {
   margin-right: 70px;
 }
 
-/* logo */
+/* Footer logo*/
 
 .logo-footer {
   display: block;
@@ -694,23 +685,19 @@ a {
   /* outline: 2px solid peru; */
 }
 
-.logo-span {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+.logo-footer:hover,
+.logo-footer:focus {
   color: var(--blue-color);
-  letter-spacing: 0.03em;
 }
 
-/* address */
+/* Address list */
 
 .address-list {
-  list-style: none;
   /* outline: 2px solid peru; */
 }
 
-.address-list li {
+.item-address,
+.item-link {
   margin-bottom: 9px;
 }
 
@@ -718,14 +705,12 @@ a {
   margin-bottom: 0;
 }
 
-.address-list a:hover {
-  color: var(--blue-color);
-}
+.address-list a:hover,
 .address-list a:focus {
   color: var(--blue-color);
 }
 
-.item-main a {
+.item-address a {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -746,7 +731,6 @@ a {
 /* Footer smlist */
 
 .footer-smlist-container {
-  display: block;
 }
 
 .footer-smlist-title {
@@ -773,6 +757,7 @@ a {
   justify-content: center;
   width: 44px;
   height: 44px;
+
   border-radius: 50%;
   background-color: var(--footer-smlist-icon);
 }
@@ -785,6 +770,7 @@ a {
 .footer-smlist-icon {
   width: 20px;
   height: 20px;
+
   fill: var(--body-background-color);
 }
 
