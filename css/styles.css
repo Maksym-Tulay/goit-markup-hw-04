@@ -144,7 +144,7 @@ a {
   letter-spacing: 0.02em;
 }
 
-.current-item {
+.current-item a{
   color: var(--blue-color);
 }
 
@@ -710,7 +710,7 @@ a {
   color: var(--blue-color);
 }
 
-.item-address a {
+.item-address a{
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
