@@ -144,7 +144,7 @@ a {
   letter-spacing: 0.02em;
 }
 
-.main-nav .current-item {
+.current-item {
   color: var(--blue-color);
 }
 
